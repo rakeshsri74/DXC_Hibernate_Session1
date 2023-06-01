@@ -1,0 +1,39 @@
+Hibernate:
+	Is a Java Persistence Framework.Is a ORM(Object/Relational Mapping) framework	
+
+Persistence:
+		Persistence is the availability of the object/data even after the process that created it,is 				terminated.
+
+		Persistence can be achieved through
+			1.DBMS
+			2.Serialization
+
+Are they equal:Object/Relational Mismatch
+	Object Model					Relational Model
+	Employee Class					Employee Table
+		Id			?		Id column
+		Name	<---------------------->	Name Column
+		Age	Hibernate			Age Column
+
+Java object with					Relational database with Table and Columns
+Properties 
+
+Hibernate Architecture:
+
+For creating first hibernate application we must know the elements of Hibernate architecture.
+They are as follows:
+	1.SessionFactory:It hold second level cache(Optional)
+	2.Session:It holds first level cache.Provides the method to insert,update,delete and retrive the data.
+		save()
+		get()If you are not sure that a matching row exists.Returns null if no matching row
+		load() It throws ObjectNotFound Exception if there is no database matching rows and no database hit 		occurs with load.
+		update()
+		saveOrUpdate()
+		flush():Synchronize database with persistence context.Occurs automatically upon transaction commit.
+		delete()
+	3.Transaction-Commit,Rollback
+
+POJO(Plain Old Java Object):
+	Java application can use Hibernate framework as the persistence layer for storing and retriving plain old 	Java Object(POJO) to/from a relational database.
+
+Hibernate Object States:

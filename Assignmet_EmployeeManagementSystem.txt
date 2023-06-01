@@ -1,0 +1,37 @@
+Seed code - Boilerplate for Hibernate - Assignment
+
+Assessment Step Description
+Read the given set of questions and solve them by writing the Solutions
+
+Problem Statement
+1.Create a maven project named EmployeeManagementSystem with required dependency.
+
+2.Create a Employee class with field in model repo:-
+	employeeId int
+	employeeName String
+	employeeAge int
+	employeeSalary int
+
+2.Create configuration mapping xml file(hibernate.cfg.xml).
+
+3.Create a utility class HibernateUtil in util repo to get sessionFactory object.
+
+4.Create a dao layer to perform CRUD operation
+
+5.Create a client class with below menu.
+	Employee Management System
+	1.Save Employee
+	2.Get All Employee
+	3.Update Employee
+	4.Delete Employee
+	5.Exit
+	Enter your choice(1-5):
+
+Expected Solution:
+
+Save employee if option is 1
+Get all employee if option is 2
+Update employee if option is 3.
+Delete employee if option is 4.
+Exit if option is 5
+Else it shows wrong option selected.
